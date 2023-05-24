@@ -1,6 +1,29 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:mvdb
+#    username: pass_local
+#    password: 1234
+#    driver-class-name: org.h2.Driver
+
 spring:
   datasource:
-    url: jdbc:h2:mem:mvdb
-    username: pass_local
-    password: 1234
-    driver-class-name: org.h2.Driver
+    url: jdbc:mysql://localhost:3306/pass_local?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: pass_local_user
+    password: passlocal123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+  batch:
+    jdbc:
+      initialize-schema: always
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
