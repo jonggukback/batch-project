@@ -20,7 +20,6 @@ public class Pass extends BaseEntity {
     private Integer packageSeq;
     private String userId;
 
-    @Enumerated(EnumType.STRING)
     private PassStatus status;
     private Integer remainingCount;
 

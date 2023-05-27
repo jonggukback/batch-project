@@ -21,9 +21,7 @@ spring:
     show-sql: true
 
   batch:
+    job:
+      enabled: false # 기본값 true는 Spring Boot 실행 시 등록되어 있는 Job들이 실행됩니다.
     jdbc:
       initialize-schema: always
-
-logging:
-  level:
-    org.hibernate.type.descriptor.sql: trace

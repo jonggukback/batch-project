@@ -1,8 +1,6 @@
 package com.batch.pass.entity.booking;
 
 import com.batch.pass.entity.BaseEntity;
-import com.batch.pass.entity.pass.Pass;
-import com.batch.pass.entity.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -30,19 +28,5 @@ public class Booking extends BaseEntity {
     private LocalDateTime startedAt;
     private LocalDateTime endedAt;
     private LocalDateTime cancelledAt;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
-    private User userEntity;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "passSeq", insertable = false, updatable = false)
-    private Pass passEntity;
-
-    // endedAt 기준, yyyy-MM-HH 00:00:00
-    public LocalDateTime getStatisticsAt() {
-        return this.endedAt.withHour(0).withMinute(0).withSecond(0).withNano(0);
-
-    }
 
 }
