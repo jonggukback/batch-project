@@ -1,4 +1,4 @@
-package com.batch.pass.repository;
+package com.batch.pass.repository.user;
 
 import com.batch.pass.entity.user.UserGroupMapping;
 import org.springframework.data.jpa.repository.JpaRepository;
