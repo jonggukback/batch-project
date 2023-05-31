@@ -2,9 +2,10 @@ package com.batch.pass.job;
 
 import com.batch.pass.entity.pass.*;
 import com.batch.pass.entity.user.UserGroupMapping;
-import com.batch.pass.repository.BulkPassRepository;
-import com.batch.pass.repository.PassRepository;
-import com.batch.pass.repository.UserGroupMappingRepository;
+import com.batch.pass.job.pass.AddPassesTasklet;
+import com.batch.pass.repository.pass.BulkPassRepository;
+import com.batch.pass.repository.pass.PassRepository;
+import com.batch.pass.repository.user.UserGroupMappingRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

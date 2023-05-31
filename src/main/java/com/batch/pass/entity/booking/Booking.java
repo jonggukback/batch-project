@@ -1,6 +1,8 @@
 package com.batch.pass.entity.booking;
 
 import com.batch.pass.entity.BaseEntity;
+import com.batch.pass.entity.pass.Pass;
+import com.batch.pass.entity.user.User;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -24,6 +26,10 @@ public class Booking extends BaseEntity {
     private BookingStatus status;
     private boolean usedPass;
     private boolean attended;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "passSeq", insertable = false, updatable = false)
+    User user;
 
     private LocalDateTime startedAt;
     private LocalDateTime endedAt;

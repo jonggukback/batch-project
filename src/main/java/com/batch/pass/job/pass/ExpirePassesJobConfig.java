@@ -1,4 +1,4 @@
-package com.batch.pass.job;
+package com.batch.pass.job.pass;
 
 import com.batch.pass.entity.pass.Pass;
 import com.batch.pass.entity.pass.PassStatus;

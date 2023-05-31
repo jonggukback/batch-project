@@ -1,4 +1,4 @@
-package com.batch.pass.repository;
+package com.batch.pass.repository.packaze;
 
 import com.batch.pass.entity.packaze.Package;
 import org.springframework.data.domain.PageRequest;
