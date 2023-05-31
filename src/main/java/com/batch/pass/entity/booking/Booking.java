@@ -28,8 +28,12 @@ public class Booking extends BaseEntity {
     private boolean attended;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "passSeq", insertable = false, updatable = false)
+    @JoinColumn(name = "userId", insertable = false, updatable = false)
     User user;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "passSeq", insertable = false, updatable = false)
+    Pass pass;
 
     private LocalDateTime startedAt;
     private LocalDateTime endedAt;
