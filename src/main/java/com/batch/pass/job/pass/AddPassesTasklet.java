@@ -1,12 +1,12 @@
-package com.batch.pass.job;
+package com.batch.pass.job.pass;
 import com.batch.pass.entity.pass.BulkPass;
 import com.batch.pass.entity.pass.BulkPassStatus;
 import com.batch.pass.entity.pass.Pass;
 import com.batch.pass.entity.user.UserGroupMapping;
-import com.batch.pass.repository.BulkPassRepository;
-import com.batch.pass.repository.PassModelMapper;
-import com.batch.pass.repository.PassRepository;
-import com.batch.pass.repository.UserGroupMappingRepository;
+import com.batch.pass.repository.pass.BulkPassRepository;
+import com.batch.pass.repository.pass.PassModelMapper;
+import com.batch.pass.repository.pass.PassRepository;
+import com.batch.pass.repository.user.UserGroupMappingRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;

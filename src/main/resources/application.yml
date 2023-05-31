@@ -25,3 +25,7 @@ spring:
       #enabled: false # 기본값 true는 Spring Boot 실행 시 등록되어 있는 Job들이 실행됩니다.
     jdbc:
       initialize-schema: always
+
+kakaotalk:
+  host: https://kapi.kakao.com
+  token: 9uN9kaXzx_PiNj6vhu_MWG9Zq4o33VW4wUWZli0MCj11GgAAAYhtBg3Q

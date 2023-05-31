@@ -1,4 +1,4 @@
-package com.batch.pass.job;
+package com.batch.pass.job.pass;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

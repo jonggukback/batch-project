@@ -4,6 +4,7 @@ import com.batch.pass.entity.pass.BulkPass;
 import com.batch.pass.entity.pass.BulkPassStatus;
 import com.batch.pass.entity.pass.Pass;
 import com.batch.pass.entity.pass.PassStatus;
+import com.batch.pass.repository.pass.PassModelMapper;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

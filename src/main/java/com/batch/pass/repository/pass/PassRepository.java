@@ -1,4 +1,4 @@
-package com.batch.pass.repository;
+package com.batch.pass.repository.pass;
 
 import com.batch.pass.entity.pass.Pass;
 import org.springframework.data.jpa.repository.JpaRepository;
